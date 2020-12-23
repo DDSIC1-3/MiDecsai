@@ -19,15 +19,21 @@
 
 <body>
     <main>
-        <form id="dar_de_alta" style="width: 600px;min-width: 538px;margin: auto;height: 300pxpx;background-color: #f2f2f2;padding: 50px;padding-bottom: 38px;padding-top: 44px;margin-top: 40px;">
+        <form action="insert.php" method="post" id="dar_de_alta" style="width: 600px;min-width: 538px;margin: auto;height: 300pxpx;background-color: #f2f2f2;padding: 50px;padding-bottom: 38px;padding-top: 44px;margin-top: 40px;">
             <h1 class="d-xl-flex justify-content-xl-center" style="margin-bottom: 22px;">Dar de Alta Usuario</h1>
-            <div class="form-group" style="width: 90%;margin: auto;"><input class="form-control" type="text" name="dni" placeholder="DNI" style="margin-top: 0px;margin-bottom: 8px;"></div>
-            <div class="form-group" style="width: 90%;margin: auto;"><input class="form-control" type="email" name="email" placeholder="Email" style="margin-bottom: 8px;"></div>
-            <div class="form-group d-xl-flex justify-content-xl-center" style="width: 40%;margin: auto;"><button class="btn" type="button" style="background-color: #282828;font-weight: normal;color: #ffffff;margin-top: 9px;padding-bottom: 6px;">Dar de Alta</button></div>
+            <div class="form-group" style="width: 90%;margin: auto;">
+                <input class="form-control" type="text" name="dni" placeholder="DNI" style="margin-top: 0px;margin-bottom: 8px;">
+            </div>
+            <div class="form-group" style="width: 90%;margin: auto;">
+                <input class="form-control" type="email" name="email" placeholder="Email" style="margin-bottom: 8px;">
+            </div>
+            <div class="form-group d-xl-flex justify-content-xl-center" style="width: 40%;margin: auto;">
+                <button class="btn" type="submit" name="dar_de_alta" value="enviar" style="background-color: #282828;font-weight: normal;color: #ffffff;margin-top: 9px;padding-bottom: 6px;">Dar de Alta</button>
+            </div>
         </form>
     </main>
     <main>
-        <form id="modificar_plazo" style="width: 600px;min-width: 538px;margin: auto;height: 300pxpx;background-color: #f2f2f2;padding: 50px;padding-bottom: 38px;padding-top: 44px;margin-top: 40px;">
+        <form action="insert.php" method="post" id="modificar_plazo" style="width: 600px;min-width: 538px;margin: auto;height: 300pxpx;background-color: #f2f2f2;padding: 50px;padding-bottom: 38px;padding-top: 44px;margin-top: 40px;">
             <h1 class="d-xl-flex justify-content-xl-center" style="margin-bottom: 22px;">Modificar Plazo</h1>
             <div class="form-group" style="width: 90%;margin: auto;margin-bottom: 8px;margin-top: 8px;"><input class="form-control" type="text" name="nombre_plazo" placeholder="Nombre del plazo" style="margin-bottom: 8px;"></div>
             <div class="form-group d-xl-flex" style="width: 90%;margin: auto;height: 80px;margin-bottom: 8px;margin-top: 8px;"><textarea class="form-control" placeholder="Descripción"></textarea></div>
@@ -42,7 +48,7 @@
         <form id="add_plazo" style="width: 600px;min-width: 538px;margin: auto;height: 300pxpx;background-color: #f2f2f2;padding: 50px;padding-bottom: 38px;padding-top: 44px;margin-top: 40px;">
             <h1 class="d-xl-flex justify-content-xl-center" style="margin-bottom: 22px;">Añadir Plazo</h1>
             <div class="form-group" style="width: 90%;margin: auto;margin-bottom: 8px;margin-top: 8px;"><input class="form-control" type="text" name="nombre_plazo" placeholder="Nombre del plazo" style="margin-bottom: 8px;"></div>
-            <div class="form-group d-xl-flex" style="width: 90%;margin: auto;height: 80px;margin-bottom: 8px;margin-top: 8px;"><textarea class="form-control" placeholder="Descripción"></textarea></div>
+            <div class="form-group d-xl-flex" style="width: 90%;margin: auto;height: 80px;margin-bottom: 8px;margin-top: 8px;"><textarea class="form-control" name="descripcion" placeholder="Descripción"></textarea></div>
             <div class="form-group d-xl-flex justify-content-xl-center" style="width: 40%;margin: auto;"><button class="btn" type="button" style="background-color: #282828;font-weight: normal;color: #ffffff;margin-top: 9px;padding-bottom: 6px;">Añadir Plazo</button></div>
         </form>
     </main>
